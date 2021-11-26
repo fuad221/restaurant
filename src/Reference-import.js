@@ -1,8 +1,8 @@
 export { default as Navbar } from './components/Navbar';
-export { default as Home } from './components/Pages/Home';
-export { default as About } from './components/Pages/About';
-export { default as Menu } from './components/Pages/Menu';
-export { default as Contact } from './components/Pages/Contact';
+export { default as Home } from './Pages/Home';
+export { default as About } from './Pages/About';
+export { default as Menu } from './Pages/Menu';
+export { default as Contact } from './Pages/Contact';
 
 
 
