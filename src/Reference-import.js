@@ -1,7 +1,7 @@
 export  {default as Navbar } from './components/Navbar';
-export  {default as Contact } from './components/Contact';
-export  {default as Home } from './components/Home';
-export  {default as Menu } from './components/Menu';
+export  {default as Contact } from './components/Pages/Contact';
+export  {default as Home } from './components/Pages/Home';
+export  {default as Menu } from './components/Pages/Menu';
 
 
 
