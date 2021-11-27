@@ -1,13 +1,35 @@
-import React from 'react'
+import * as React from 'react';
+import Card from '@mui/material/Card';
+import CardActions from '@mui/material/CardActions';
+import CardContent from '@mui/material/CardContent';
+import CardMedia from '@mui/material/CardMedia';
+import Typography from '@mui/material/Typography';
 
-const SingleMenuItem = ({image, name, price }) => {
+export default function SingleMenuItem({ image, name, price }) {
     return (
-        <div className="menuItem">
-            <div style={{ backgroundImage: `url(${image})` }}> </div>
-            <h1> {name} </h1>
-            <p> € {price} </p>
-        </div>
-    )
-}
+        <Card sx={{ maxWidth: 345 }}>
+            <CardMedia
+                component="img"
+                height="300"
+                image={image}
+                alt=""
+            />
+            <CardContent>
+                <Typography gutterBottom variant="h5" component="div">
+                    {name}
+                </Typography>
+                <Typography variant="body2" color="text.secondary">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime
+                    mollitia, molestiae quas vel sint commodi repudiandae consequuntur
+                    voluptatum laborum numquam
+                </Typography>
+                <Typography variant="body2" color="text.secondary">
+                € {price}
+                </Typography>
+            </CardContent>
+            <CardActions>
 
-export default SingleMenuItem
+            </CardActions>
+        </Card>
+    );
+}
